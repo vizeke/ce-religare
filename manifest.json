@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Religare",
+    "description": "",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/*"
+            ],
+            "css": [
+                "css/religare.css"
+            ],
+            "js": [
+                "js/jquery-3.2.1.min.js",
+                "js/config.js",
+                "js/main.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "https://web.whatsapp.com/*"
+    ]
+}
